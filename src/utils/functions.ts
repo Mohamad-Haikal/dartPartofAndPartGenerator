@@ -18,7 +18,6 @@ export class AutoPartOfFunctions {
     }
 
     async createFileIfNotExist(uri: vscode.Uri): Promise<void> {
-        console.log(uri)
         try {
             await vscode.workspace.fs.readFile(uri)
         } catch (error) {
@@ -38,6 +37,6 @@ export class AutoPartOfFunctions {
     }
 
     async insertPart(masterFileUri: vscode.Uri, relativePathToChild: string, currentMasterFileContent: string) {
-        await vscode.workspace.fs.writeFile(masterFileUri, new TextEncoder().encode(`part '${relativePathToChild}';\n` + currentMasterFileContent));
+        await vscode.workspace.fs.writeFile(masterFileUri, new TextEncoder().encode(currentMasterFileContent + `\npart '${relativePathToChild}';`));
     }
 }

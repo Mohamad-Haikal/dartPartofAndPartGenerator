@@ -34,8 +34,3 @@ You can configure the default imports file path in your VS Code settings under `
 ## Issues and Contributions
 
 If you encounter any issues or have suggestions for improvement, please [submit an issue](https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator/issues). Contributions are also welcome!
-
-## License
-
-This extension is licensed under the [MIT License](LICENSE), but it is strictly prohibited to create or reproduce similar extensions.
-

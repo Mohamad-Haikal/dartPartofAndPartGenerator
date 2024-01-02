@@ -10,3 +10,4 @@ ISSUES.md
 .DS_Store
 test-directories
 important.txt
+package-lock.json
