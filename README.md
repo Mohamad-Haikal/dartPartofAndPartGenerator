@@ -1,11 +1,7 @@
 # Dart Part of And Part Generator (VS Code Extension)
 
-[![Version Badge][version-badge]][badge-redirect]
-[![Downloads Badge][downloads-badge]][badge-redirect]
 
-[version-badge]: https://vsmarketplacebadges.dev/version/MohamadHaikal.dartPartofAndPartGenerator.png
-[downloads-badge]: https://vsmarketplacebadges.dev/downloads-short/MohamadHaikal.dartPartofAndPartGenerator.png
-[badge-redirect]: https://marketplace.visualstudio.com/items?itemName=MohamadHaikal.dartPartofAndPartGenerator
+[![Latest Release](https://img.shields.io/visual-studio-marketplace/v/MohamadHaikal.dartPartofAndPartGenerator?style=flat&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MohamadHaikal.dartPartofAndPartGenerator)
 
 Simplify and streamline Dart project management with this VS Code extension. It automates the creation of [part of] and [part] directives, enhancing the workflow for Dart developers.
 
