@@ -1,0 +1,12 @@
+out
+dist
+node_modules
+.env
+.vscode/*
+.vscode-test/
+local/*
+*.vsix
+ISSUES.md
+.DS_Store
+test-directories
+important.txt

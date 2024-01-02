@@ -1,0 +1,89 @@
+{
+  "name": "dartPartofAndPartGenerator",
+  "displayName": "Dart Part of And Part Generator",
+  "description": "Eliminates the hassle of manually managing [ part of ] and [ part ] directives, optimizing Dart workflow.",
+  "publisher": "MohamadHaikal",
+  "author": {
+    "name": "Mohamad Haikal",
+    "email": "mohamad.m.haikal0@gmail.com"
+  },
+  "homepage": "https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator/blob/main/README.md",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator.git"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "extensionPack": [
+    "MohamadHaikal.dartPartofAndPartGenerator"
+  ],
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "DartPartofAndPartGenerator.ImportsFilePath": {
+          "type": "string",
+          "default": "/lib/utils/imports.dart",
+          "description": "It must be like as: /lib/utils/imports.dart"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "extension.createDartPartOfAndPart",
+        "when": "editorTextFocus",
+        "key": "Ctrl+Alt+P",
+        "mac": "Cmd+Alt+P"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.createDartPartOfAndPart",
+        "title": "Dart: Create 'Part' & 'Part Of'"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:extension.createDartPartOfAndPart",
+    "onLanguage:dart"
+  ],
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "drop",
+    "drag and drop import",
+    "relative import",
+    "auto import",
+    "relative path",
+    "drag",
+    "import",
+    "path",
+    "relative",
+    "dart",
+    "flutter",
+    "part of",
+    "part",
+    "library",
+    "imports"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.70.0",
+    "eslint": "^8.56.0",
+    "glob": "^8.0.3",
+    "package.json": "^2.0.1",
+    "typescript": "^5.3.3"
+  }
+}
