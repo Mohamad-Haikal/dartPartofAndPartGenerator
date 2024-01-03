@@ -1,6 +1,5 @@
 import * as vscode from 'vscode';
 
-import { getRelativePath } from './relative-path';
 import { Constants } from './constants';
 
 export class AutoPartOfFunctions {
@@ -9,12 +8,6 @@ export class AutoPartOfFunctions {
         const userMasterFileConfig = vscode.workspace.getConfiguration(configSection).get(configProperty, Constants.defaultImportsFilePath);
         const masterFileUri = vscode.Uri.parse(workspaceUri.path + userMasterFileConfig);
         return masterFileUri;
-    }
-
-    async createRelativePathes(activeFile: string, masterFile: string): Promise<{ relativePathToMaster: string; relativePathToChild: string; }> {
-        const relativePathToMaster = getRelativePath(activeFile, masterFile);
-        const relativePathToChild = getRelativePath(masterFile, activeFile);
-        return { relativePathToMaster, relativePathToChild }
     }
 
     async createFileIfNotExist(uri: vscode.Uri): Promise<void> {
@@ -32,11 +25,18 @@ export class AutoPartOfFunctions {
         return decodedContent;
     }
 
+    async checkIfContain(checkfileUri: vscode.Uri, textToCheck: string) : Promise<boolean>{
+        const fileContent = await this.readFile(checkfileUri);
+        const isExist = fileContent.includes(textToCheck);
+        return isExist;
+    }
+
     async insertPartOf(relativePathToMaster: string) {
         await vscode.window.activeTextEditor.insertSnippet(new vscode.SnippetString(`part of '${relativePathToMaster}';\n`), new vscode.Position(0, 0))
     }
 
-    async insertPart(masterFileUri: vscode.Uri, relativePathToChild: string, currentMasterFileContent: string) {
+    async insertPart(masterFileUri: vscode.Uri, relativePathToChild: string) {
+        const currentMasterFileContent = await this.readFile(masterFileUri);
         await vscode.workspace.fs.writeFile(masterFileUri, new TextEncoder().encode(currentMasterFileContent + `\npart '${relativePathToChild}';`));
     }
 }

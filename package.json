@@ -7,8 +7,9 @@
     "name": "Mohamad Haikal",
     "email": "mohamad.m.haikal0@gmail.com"
   },
+  "icon": "assets/icon.png",
   "homepage": "https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator/blob/main/README.md",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator.git"
