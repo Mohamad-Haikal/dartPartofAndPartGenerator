@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mohamad-Haikal/dartPartofAndPartGenerator/main/assets/icon.png" alt="Dart Part of And Part Generator - Logo">
+  <img src="https://raw.githubusercontent.com/Mohamad-Haikal/dartPartofAndPartGenerator/main/assets/icon.png" alt="Dart Part of And Part Generator - Logo" width="200" height="200">
 </p>
 
 # Dart Part of And Part Generator (VS Code Extension)
