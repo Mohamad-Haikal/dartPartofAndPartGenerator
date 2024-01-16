@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 import { Constants } from './constants';
 
-export class AutoPartOfFunctions {
+export class AutoPartofFunctions {
 
     async getMasterFilePathFromUserConfiguration(workspaceUri: vscode.Uri, configSection: string, configProperty: string) {
         const userMasterFileConfig = vscode.workspace.getConfiguration(configSection).get(configProperty, Constants.defaultImportsFilePath);
@@ -31,7 +31,7 @@ export class AutoPartOfFunctions {
         return isExist;
     }
 
-    async insertPartOf(relativePathToMaster: string) {
+    async insertPartof(relativePathToMaster: string) {
         await vscode.window.activeTextEditor.insertSnippet(new vscode.SnippetString(`part of '${relativePathToMaster}';\n`), new vscode.Position(0, 0))
     }
 

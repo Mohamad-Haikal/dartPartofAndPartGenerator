@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-import { AutoPartOfFunctions } from './utils/functions';
+import { AutoPartofFunctions } from './utils/functions';
 import { Constants } from './utils/constants';
 import { readFile } from 'fs';
 import { getRelativePath } from './utils/relative-path';
@@ -16,7 +16,7 @@ export class PartofAndPartCreator {
       activeTextEditor = vscode.window.activeTextEditor;
     }
 
-    const functions = new AutoPartOfFunctions();
+    const functions = new AutoPartofFunctions();
     const workspaceUri = vscode.workspace.workspaceFolders[0].uri;
     const masterFileUri = await functions.getMasterFilePathFromUserConfiguration(workspaceUri, Constants.configSection, Constants.configProperty);
     var activeFileUri = activeTextEditor.document.uri;
@@ -30,7 +30,7 @@ export class PartofAndPartCreator {
 
 
     if (await functions.checkIfContain(activeFileUri, relativePathToMaster) === false) {
-      await functions.insertPartOf(relativePathToMaster)
+      await functions.insertPartof(relativePathToMaster)
     }
     
 

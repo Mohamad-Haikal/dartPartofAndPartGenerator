@@ -3,18 +3,26 @@
 </p>
 
 # Dart Part of And Part Generator (VS Code Extension)
+<p align="center">
+ <img alt="Visual Studio Marketplace Rating (Stars)" src="https://img.shields.io/visual-studio-marketplace/stars/MohamadHaikal.dartPartofAndPartGenerator?color=blue&style=for-the-badge">
+<img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/i/MohamadHaikal.dartPartofAndPartGenerator?style=for-the-badge&color=brightgreen">
+ <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/MohamadHaikal.dartPartofAndPartGenerator?color=blue&style=for-the-badge&color=brightgreen">
+ <img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/Mohamad-Haikal/dartPartofAndPartGenerator?color=blue&style=for-the-badge">
+</p>
 
 
 
-[![Latest Release](https://img.shields.io/visual-studio-marketplace/v/MohamadHaikal.dartPartofAndPartGenerator?style=flat&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MohamadHaikal.dartPartofAndPartGenerator)
 
 Simplify and streamline Dart project management with this VS Code extension. It automates the creation of [part of] and [part] directives, enhancing the workflow for Dart developers.
 
+
+<img src="./assets/gifs/overview.gif" alt="overview" width="100%"/>
 
 ## Features
 
 - Quickly create [part of] and [part] directives in Dart files.
 - Enhance and streamline your Dart development workflow by automating the process for better productivity.
+
 
 ## Installation
 
@@ -36,6 +44,8 @@ Simplify and streamline Dart project management with this VS Code extension. It 
 
 This provides flexibility in using the extension according to your preferred workflow.
 
+<img src="./assets/gifs/extinsion-usage.gif" alt="extinsion-usage" width="100%"/>
+
 
 ## Configuration
 
@@ -49,11 +59,13 @@ To customize the default imports file path used by the extension, follow these s
 
 4. Modify the path according to your project structure. The default value is set to `/lib/utils/imports.dart`.
 
-   **Note:** Ensure that the path starts with `/` (forward slash) and is relative to the workspace root.
+<img src="./assets/gifs/change-imports-file-path.gif" alt="change-imports-file-path" width="100%">
 
-   **Important:** If the specified file is not found, the extension will automatically create it.
+**Note:** Ensure that the path starts with `/` (forward slash) and is relative to the workspace root.
 
-Now, the extension will use the specified file path for managing imports in your Dart project. This customization provides flexibility to adapt the extension to various project setups.
+**Important:** If the specified file is not found, the extension will automatically create it.
+
+Now, the extension will use the specified file path for managing imports in your Dart project. This customization provides flexibility to adapt the extension to various project setups.*
 
 
 ## Issues and Contributions

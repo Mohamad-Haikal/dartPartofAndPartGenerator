@@ -2,14 +2,14 @@
   "name": "dartPartofAndPartGenerator",
   "displayName": "Dart Part of And Part Generator",
   "description": "Eliminates the hassle of manually managing [ part of ] and [ part ] directives, optimizing Dart workflow.",
-  "publisher": "MohamadHaikal",
+  "publisher": "Mohamad Haikal",
   "author": {
     "name": "Mohamad Haikal",
     "email": "mohamad.m.haikal0@gmail.com"
   },
   "icon": "assets/icon.png",
   "homepage": "https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator/blob/main/README.md",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/Mohamad-Haikal/dartPartofAndPartGenerator.git"
@@ -32,7 +32,7 @@
     },
     "keybindings": [
       {
-        "command": "extension.createDartPartOfAndPart",
+        "command": "extension.createDartPartofAndPart",
         "when": "editorTextFocus",
         "key": "Ctrl+Alt+P",
         "mac": "Cmd+Alt+P"
@@ -40,13 +40,13 @@
     ],
     "commands": [
       {
-        "command": "extension.createDartPartOfAndPart",
+        "command": "extension.createDartPartofAndPart",
         "title": "Dart: Create 'Part' & 'Part Of'"
       }
     ]
   },
   "activationEvents": [
-    "onCommand:extension.createDartPartOfAndPart",
+    "onCommand:extension.createDartPartofAndPart",
     "onLanguage:dart"
   ],
   "categories": [
